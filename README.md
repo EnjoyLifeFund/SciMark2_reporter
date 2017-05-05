@@ -1,12 +1,8 @@
-<center>![](scimark2_01.gif)  
-[[Home](index.html)] [[Version 2](whatsnew.html)] [[Run it Now](run.html)] [[Download](download.html)] [[Results](/cgi-bin/ScimarkSummary)] [[FAQ](faq.html)] [[About](about.html)] [[Resources](resources.html)] [[Credits](credits.html)]  
- </center>
-
 <center>
 
 **<font size="+1">How fast is _your_ Java platform for number crunching?</font>**  
 
-**<font size="+1">[Run it on your system now!](run.html)</font>**
+**<font size="+1">[Run it on your system now!](http://math.nist.gov/scimark2/run.html)</font>**
 
 </center>
 
