@@ -1,0 +1,9 @@
+00:03.0 Non-VGA unclassified device: Red Hat, Inc Virtio SCSI
+	Subsystem: Red Hat, Inc Device 0008
+	Physical Slot: 3
+	Flags: bus master, fast devsel, latency 0, IRQ 11
+	I/O ports at c000 [size=64]
+	Memory at febfe000 (32-bit, non-prefetchable) [size=128]
+	Capabilities: <access denied>
+	Kernel driver in use: virtio-pci
+
