@@ -22,10 +22,9 @@ and then run
 This produces an output similar to
 
 
-**                                                              **
-** SciMark2 Numeric Benchmark, see http://math.nist.gov/scimark **
-** for details. (Results can be submitted to pozo@nist.gov)     **
-**                                                              **
+** SciMark2 Numeric Benchmark, see http://math.nist.gov/scimark for details. 
+** (Results can be submitted to pozo@nist.gov)    
+
 Using       2.00 seconds min time per kenel.
 Composite Score:           65.56
 FFT             Mflops:    63.38    (N=1024)
@@ -48,5 +47,8 @@ that typically do not fit in cache) use
 
 
 ------------------------------------------------------------------
+2017-05-09 Add rock.bin for testing -- Ralic Lo
+> ./rock.bin
+
 
 
