@@ -1,20 +1,41 @@
-mkdir newbin
-echo "[Info] Creating Scimark2 excutable in newbin"
+#!/bin/bash
+function move2folder() {
+	yes|mv FFT.o $folder
+	yes|mv LU.o $folder
+	yes|mv MonteCarlo.o $folder
+	yes|mv Random.o $folder
+	yes|mv SOR.o $folder
+	yes|mv SparseCompRow.o $folder
+	yes|mv Stopwatch.o $folder
+	yes|mv array.o $folder
+	yes|mv kernel.o $folder
+	yes|mv scimark2 $folder
+	yes|mv scimark2.o $folder
+}
+
+
+## Using mac for scoring
 yes|make
-yes|mv FFT.o newbin
-yes|mv LU.o newbin
-yes|mv MonteCarlo.o newbin
-yes|mv Random.o newbin
-yes|mv SOR.o newbin
-yes|mv SparseCompRow.o newbin
-yes|mv Stopwatch.o newbin
-yes|mv array.o newbin
-yes|mv kernel.o newbin
-yes|mv scimark2 newbin
-yes|mv scimark2.o newbin
-echo "[Info] Scimark2 Benchmarking..."
-./newbin/scimark2 > scimark2.score
+folder=newbin
+mkdir $folder
+move2folder
+echo "[Info] Scimark2 Benchmarking using system compiler."
+./$folder/scimark2 > scimark2.score
 cat scimark2.score
-./newbin/scimark2 -large > scimark2-large.score
+./$folder/scimark2 -large > scimark2-large.score
 cat scimark2-large.score
+yes|mv scimark2*.score $folder
+
+## Using GCC for scoring
+echo "[Info] Scimark2 Benchmarking using GCC-7 compiler..."
+
+./gccmake 
+folder=gccbin
+mkdir $folder
+move2folder
+./$folder/scimark2 > scimark2.gccscore
+cat scimark2.gccscore
+./$folder/scimark2 -large > scimark2-large.gccscore
+cat scimark2-large.gccscore
+yes|mv scimark2*.gccscore $folder
 

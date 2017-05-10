@@ -3,9 +3,9 @@
 ** for details. (Results can be submitted to pozo@nist.gov)     **
 **                                                              **
 Using       2.00 seconds min time per kenel.
-Composite Score:          421.72
-FFT             Mflops:   107.93    (N=1048576)
-SOR             Mflops:   835.52    (1000 x 1000)
-MonteCarlo:     Mflops:    95.80
-Sparse matmult  Mflops:   474.02    (N=100000, nz=1000000)
-LU              Mflops:   595.32    (M=1000, N=1000)
+Composite Score:          435.60
+FFT             Mflops:   104.49    (N=1048576)
+SOR             Mflops:   897.45    (1000 x 1000)
+MonteCarlo:     Mflops:    99.48
+Sparse matmult  Mflops:   482.21    (N=100000, nz=1000000)
+LU              Mflops:   594.36    (M=1000, N=1000)

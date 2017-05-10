@@ -1,0 +1,11 @@
+gcc-7  -c scimark2.c
+gcc-7  -c FFT.c
+gcc-7  -c kernel.c
+gcc-7  -c Stopwatch.c
+gcc-7  -c Random.c
+gcc-7  -c SOR.c
+gcc-7  -c SparseCompRow.c
+gcc-7  -c array.c
+gcc-7  -c MonteCarlo.c
+gcc-7  -c LU.c
+gcc-7  -o scimark2 scimark2.o FFT.o kernel.o Stopwatch.o Random.o SOR.o SparseCompRow.o array.o MonteCarlo.o LU.o   -lm
