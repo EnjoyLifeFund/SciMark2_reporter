@@ -1,0 +1,20 @@
+mkdir newbin
+echo "[Info] Creating Scimark2 excutable in newbin"
+yes|make
+yes|mv FFT.o newbin
+yes|mv LU.o newbin
+yes|mv MonteCarlo.o newbin
+yes|mv Random.o newbin
+yes|mv SOR.o newbin
+yes|mv SparseCompRow.o newbin
+yes|mv Stopwatch.o newbin
+yes|mv array.o newbin
+yes|mv kernel.o newbin
+yes|mv scimark2 newbin
+yes|mv scimark2.o newbin
+echo "[Info] Scimark2 Benchmarking..."
+./newbin/scimark2 > scimark2.score
+cat scimark2.score
+./newbin/scimark2 -large > scimark2-large.score
+cat scimark2-large.score
+
