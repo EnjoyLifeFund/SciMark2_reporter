@@ -1,5 +1,6 @@
 #!/bin/bash
 function move2folder() {
+	mkdir $folder
 	yes|mv FFT.o $folder
 	yes|mv LU.o $folder
 	yes|mv MonteCarlo.o $folder
@@ -13,29 +14,29 @@ function move2folder() {
 	yes|mv scimark2.o $folder
 }
 
+function getscore() {
+	./$folder/scimark2 > scimark2.$suffix
+	cat scimark2.$suffix
+	./$folder/scimark2 -large > scimark2-large.$suffix
+	cat scimark2-large.$suffix
+	yes|mv scimark2*.$suffix $folder
+}
 
 ## Using mac for scoring
-yes|make
+echo "[Info] Building -- Scimark2 Benchmarking using GCC-7 compiler..."
+make
 folder=newbin
-mkdir $folder
+suffix=score
 move2folder
-echo "[Info] Scimark2 Benchmarking using system compiler."
-./$folder/scimark2 > scimark2.score
-cat scimark2.score
-./$folder/scimark2 -large > scimark2-large.score
-cat scimark2-large.score
-yes|mv scimark2*.score $folder
+echo "[Info] Testing -- Scimark2 Benchmarking using system compiler..."
+getscore
 
 ## Using GCC for scoring
-echo "[Info] Scimark2 Benchmarking using GCC-7 compiler..."
-
+echo "[Info] Building -- Scimark2 Benchmarking using GCC-7 compiler..."
 ./gccmake 
 folder=gccbin
-mkdir $folder
+suffix=gccscore
 move2folder
-./$folder/scimark2 > scimark2.gccscore
-cat scimark2.gccscore
-./$folder/scimark2 -large > scimark2-large.gccscore
-cat scimark2-large.gccscore
-yes|mv scimark2*.gccscore $folder
+echo "[Info] Testing -- Scimark2 Benchmarking using GCC-7 compiler..."
+getscore
 
