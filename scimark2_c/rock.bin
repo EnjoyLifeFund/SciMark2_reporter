@@ -23,7 +23,7 @@ function getscore() {
 }
 
 ## Using mac for scoring
-echo "[Info] Building -- Scimark2 Benchmarking using GCC-7 compiler..."
+echo "[Info] Building -- Scimark2 Benchmarking using system compiler..."
 make
 folder=newbin
 suffix=score
