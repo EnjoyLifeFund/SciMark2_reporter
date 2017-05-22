@@ -1,7 +1,7 @@
 .SUFFIXES: .c .o
 
 .c.o:
-	$(CC) $(CFLAGS) -c $<
+	$(CC) $(CFLAGS) -c -Ofast $<
 
 all: scimark2 
 
