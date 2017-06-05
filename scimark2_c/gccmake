@@ -1,11 +1,11 @@
-gcc-7  -c -Ofast scimark2.c
-gcc-7  -c -Ofast FFT.c
-gcc-7  -c -Ofast kernel.c
-gcc-7  -c -Ofast Stopwatch.c
-gcc-7  -c -Ofast Random.c
-gcc-7  -c -Ofast SOR.c
-gcc-7  -c -Ofast SparseCompRow.c
-gcc-7  -c -Ofast array.c
-gcc-7  -c -Ofast MonteCarlo.c
-gcc-7  -c -Ofast LU.c
-gcc-7  -o scimark2 scimark2.o FFT.o kernel.o Stopwatch.o Random.o SOR.o SparseCompRow.o array.o MonteCarlo.o LU.o   -lm
+gcc-7 -g -c $CFLAGS -Ofast -flto scimark2.c
+gcc-7 -g -c $CFLAGS -Ofast -flto FFT.c
+gcc-7 -g -c $CFLAGS -Ofast -flto kernel.c
+gcc-7 -g -c $CFLAGS -Ofast -flto Stopwatch.c
+gcc-7 -g -c $CFLAGS -Ofast -flto Random.c
+gcc-7 -g -c $CFLAGS -Ofast -flto SOR.c
+gcc-7 -g -c $CFLAGS -Ofast -flto SparseCompRow.c
+gcc-7 -g -c $CFLAGS -Ofast -flto array.c
+gcc-7 -g -c $CFLAGS -Ofast -flto MonteCarlo.c
+gcc-7 -g -c $CFLAGS -Ofast -flto LU.c
+gcc-7 -o scimark2 scimark2.o FFT.o kernel.o Stopwatch.o Random.o SOR.o SparseCompRow.o array.o MonteCarlo.o LU.o $LDFLAGS -lm

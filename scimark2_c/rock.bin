@@ -1,4 +1,5 @@
 #!/bin/bash
+make clean
 function move2folder() {
 	mkdir $folder
 	yes|mv FFT.o $folder
@@ -33,7 +34,7 @@ getscore
 
 ## Using GCC for scoring
 echo "[Info] Building -- Scimark2 Benchmarking using GCC-7 compiler..."
-./gccmake 
+./gccmake2 
 folder=gccbin
 suffix=gccscore
 move2folder
