@@ -16,9 +16,9 @@ function move2folder() {
 }
 
 function getscore() {
-	./$folder/scimark2 > scimark2.$suffix
+	time ./$folder/scimark2 > scimark2.$suffix
 	cat scimark2.$suffix
-	./$folder/scimark2 -large > scimark2-large.$suffix
+	time ./$folder/scimark2 -large > scimark2-large.$suffix
 	cat scimark2-large.$suffix
 	yes|mv scimark2*.$suffix $folder
 }
