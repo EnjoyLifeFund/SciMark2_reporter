@@ -1,15 +1,3 @@
-./newbin/scimark2: Mach-O executable i386
-**                                                              **
-** SciMark2 Numeric Benchmark, see http://math.nist.gov/scimark **
-** for details. (Results can be submitted to pozo@nist.gov)     **
-**                                                              **
-Using       2.00 seconds min time per kenel.
-Composite Score:         2561.69
-FFT             Mflops:  1744.09    (N=1024)
-SOR             Mflops:  1490.12    (100 x 100)
-MonteCarlo:     Mflops:   766.96
-Sparse matmult  Mflops:  6775.45    (N=1000, nz=5000)
-LU              Mflops:  2031.84    (M=100, N=100)
 	Command being timed: "./newbin/scimark2"
 	User time (seconds): 26.17
 	System time (seconds): 0.29

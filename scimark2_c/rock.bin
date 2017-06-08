@@ -24,12 +24,14 @@ function getscore() {
 	# Small dataset report
 	file ./$folder/scimark2  > scimark2.$suffix
 	echo "[Info] Smaller Number ~1024"
-	gtime -v ./$folder/scimark2 >> scimark2.$suffix
+	gtime -o scimark2_time.$suffix -v ./$folder/scimark2 >> scimark2.$suffix
+	cat scimark2_time.$suffix >> scimark2.$suffix
 	cat scimark2.$suffix
 	## Large dataset report
 	echo "[Info] Larger Number ~1048576"
-	gtime -v ./$folder/scimark2 -large > scimark2-large.$suffix
-	cat scimark2-large.$suffix
+	gtime -o scimark2_large_time.$suffix -v ./$folder/scimark2 -large  > scimark2_large.$suffix
+	cat scimark2_time_large.$suffix >> scimark2_large.$suffix
+	cat scimark2_large.$suffix
 	## report rellocaiton
 	yes|mv scimark2*.$suffix $folder
 }
