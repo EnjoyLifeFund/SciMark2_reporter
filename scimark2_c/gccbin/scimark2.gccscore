@@ -1,11 +1,12 @@
+./gccbin/scimark2: Mach-O 64-bit executable x86_64
 **                                                              **
 ** SciMark2 Numeric Benchmark, see http://math.nist.gov/scimark **
 ** for details. (Results can be submitted to pozo@nist.gov)     **
 **                                                              **
 Using       2.00 seconds min time per kenel.
-Composite Score:         1517.35
-FFT             Mflops:  1343.76    (N=1024)
-SOR             Mflops:  1493.50    (100 x 100)
-MonteCarlo:     Mflops:   486.68
-Sparse matmult  Mflops:  1617.92    (N=1000, nz=5000)
-LU              Mflops:  2644.89    (M=100, N=100)
+Composite Score:         1620.18
+FFT             Mflops:  1335.98    (N=1024)
+SOR             Mflops:  1625.98    (100 x 100)
+MonteCarlo:     Mflops:   443.04
+Sparse matmult  Mflops:  1744.47    (N=1000, nz=5000)
+LU              Mflops:  2951.43    (M=100, N=100)
