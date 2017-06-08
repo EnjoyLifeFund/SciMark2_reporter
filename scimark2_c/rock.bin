@@ -50,8 +50,12 @@ function getscore() {
 
 function reportdiff () {
 	echo "[Info] Report comparision, LEFT: GCC, RIGHT : Clang"
-	icdiff reports/$dateinfo/scimark2.gccscore-gccbin reports/$dateinfo/scimark2.score-newbin > reports/$dateinfo/score.diff
-	cat reports/$dateinfo/score.diff
+	### sdiff or icdiff
+	diff --side-by-side reports/$dateinfo/scimark2.gccscore-gccbin reports/$dateinfo/scimark2.score-newbin > reports/$dateinfo/score.diff
+	cat -n reports/$dateinfo/score.diff | grep "|" > score-diff.summary
+	cat -n reports/$dateinfo/score.diff
+	echo "[DIFF REPORT SUMMARY]"
+	cat score-diff.summary
 }
 
 ## Using mac for scoring
