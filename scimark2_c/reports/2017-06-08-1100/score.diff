@@ -1,0 +1,73 @@
+[0;34mreports/2017-06-08-1100/scimark2.gccscore-gccbin[m                       [0;34mreports/2017-06-08-1100/scimark2.score-newbin[m                         
+./[1;33mgcc[mbin/scimark2: Mach-O[1;31m 64-bit[m executable [1;33mx[m86[1;31m_64[m                     ./[1;33mnew[mbin/scimark2: Mach-O executable [1;33mi3[m86                             
+Darwin dojos-MacBook-Pro.local 16.6.0 Darwin Kernel Version 16.6.0: F  Darwin dojos-MacBook-Pro.local 16.6.0 Darwin Kernel Version 16.6.0: F 
+ri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86  ri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86 
+_64 i386 MacBookPro8,1 Darwin                                          _64 i386 MacBookPro8,1 Darwin                                         
+Hardware:                                                              Hardware:                                                             
+                                                                                                                                             
+    Hardware Overview:                                                     Hardware Overview:                                                
+                                                                                                                                             
+[0;34m---[m                                                                    [0;34m---[m                                                                   
+**                                                              **     **                                                              **    
+** SciMark2 Numeric Benchmark, see http://math.nist.gov/scimark **     ** SciMark2 Numeric Benchmark, see http://math.nist.gov/scimark **    
+** for details. (Results can be submitted to pozo@nist.gov)     **     ** for details. (Results can be submitted to pozo@nist.gov)     **    
+**                                                              **     **                                                              **    
+Using       2.00 seconds min time per kenel.                           Using       2.00 seconds min time per kenel.                          
+Composite Score:         1[1;31m498.68[m                                       Composite Score:         [1;32m2774.5[m1                                      
+FFT             Mflops:  1[1;33m2[m3[1;31m9.86[m    (N=1024)                           FFT             Mflops:  1[1;33m567.5[m3    (N=1024)                          
+SOR             Mflops:  1[1;33m5[m0[1;31m4[m.[1;33m25[m    (100 x 100)                        SOR             Mflops:  1[1;33m46[m0.[1;33m71[m    (100 x 100)                       
+MonteCarlo:     Mflops:   4[1;33m53.63[m                                       MonteCarlo:     Mflops:   [1;32m892.[m4[1;33m4[m                                      
+Sparse matmult  Mflops:  15[1;31m85.33[m    (N=1000, nz=5000)                  Sparse matmult  Mflops:  [1;32m7249.[m15    (N=1000, nz=5000)                 
+LU              Mflops:  27[1;31m1[m0.[1;33m32[m    (M=100, N=100)                     LU              Mflops:  270[1;32m2[m.[1;33m70[m    (M=100, N=100)                    
+        Command being timed: "./[1;33mgcc[mbin/scimark2"                               Command being timed: "./[1;33mnew[mbin/scimark2"                      
+        User time (seconds): 2[1;33m5[m.[1;33m77[m                                             User time (seconds): 2[1;33m3[m.[1;33m64[m                                    
+        System time (seconds): 0.[1;33m29[m                                            System time (seconds): 0.[1;33m33[m                                   
+        Percent of CPU this job got: 9[1;33m9[m%                                       Percent of CPU this job got: 9[1;33m8[m%                              
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:2[1;33m6[m.2[1;33m7[m                   Elapsed (wall clock) time (h:mm:ss or m:ss): 0:2[1;33m4[m.2[1;33m9[m          
+        Average shared text size (kbytes): 0                                   Average shared text size (kbytes): 0                          
+        Average unshared data size (kbytes): 0                                 Average unshared data size (kbytes): 0                        
+        Average stack size (kbytes): 0                                         Average stack size (kbytes): 0                                
+        Average total size (kbytes): 0                                         Average total size (kbytes): 0                                
+        Maximum resident set size (kbytes): 9[1;31m0[m1[1;33m1200[m                            Maximum resident set size (kbytes): [1;32m371[m91[1;33m68[m                   
+        Average resident set size (kbytes): 0                                  Average resident set size (kbytes): 0                         
+        Major (requiring I/O) page faults: [1;33m0[m                                   Major (requiring I/O) page faults: [1;33m1[m                          
+        Minor (reclaiming a frame) page faults: [1;33m788[m                            Minor (reclaiming a frame) page faults: [1;33m465[m                   
+        Voluntary context switches: 0                                          Voluntary context switches: 0                                 
+        Involuntary context switches: [1;31m4[m5[1;33m74[m2                                    Involuntary context switches: 5[1;33m61[m2[1;32m5[m                           
+        Swaps: 0                                                               Swaps: 0                                                      
+        File system inputs: 0                                                  File system inputs: 0                                         
+        File system outputs: 0                                                 File system outputs: 0                                        
+        Socket messages sent: 0                                                Socket messages sent: 0                                       
+        Socket messages received: 0                                            Socket messages received: 0                                   
+[0;34m---[m                                                                    [0;34m---[m                                                                   
+**                                                              **     **                                                              **    
+** SciMark2 Numeric Benchmark, see http://math.nist.gov/scimark **     ** SciMark2 Numeric Benchmark, see http://math.nist.gov/scimark **    
+** for details. (Results can be submitted to pozo@nist.gov)     **     ** for details. (Results can be submitted to pozo@nist.gov)     **    
+**                                                              **     **                                                              **    
+Using       2.00 seconds min time per kenel.                           Using       2.00 seconds min time per kenel.                          
+Composite Score:         [1;31m11[m23.[1;33m4[m0                                       Composite Score:         2[1;32m98[m3.[1;33m3[m0                                      
+FFT             Mflops:   2[1;33m21[m.[1;33m3[m8    (N=1048576)                        FFT             Mflops:   2[1;33m30[m.[1;33m9[m8    (N=1048576)                       
+SOR             Mflops:  13[1;33m9[m0[1;33m.16[m    (1000 x 1000)                      SOR             Mflops:  13[1;33m31.[m0[1;33m4[m    (1000 x 1000)                     
+MonteCarlo:     Mflops:   4[1;31m30.47[m                                       MonteCarlo:     Mflops:   [1;32m921.8[m4                                      
+Sparse matmult  Mflops: [7;31m [m14[1;33m38[m.[1;33m85[m    (N=100000, nz=1000000)             Sparse matmult  Mflops: 1[1;32m0[m4[1;33m57[m.[1;33m26[m    (N=100000, nz=1000000)            
+LU              Mflops:  [1;31m2[m13[1;33m6.16[m    (M=1000, N=1000)                   LU              Mflops:  1[1;32m975.[m3[1;33m9[m    (M=1000, N=1000)                  
+        Command being timed: "./[1;33mgcc[mbin/scimark2 -large"                        Command being timed: "./[1;33mnew[mbin/scimark2 -large"               
+        User time (seconds): 2[1;33m6[m.[1;33m46[m                                             User time (seconds): 2[1;33m7[m.[1;33m00[m                                    
+        System time (seconds): 0.[1;33m71[m                                            System time (seconds): 0.[1;33m39[m                                   
+        Percent of CPU this job got: 98%                                       Percent of CPU this job got: 98%                              
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:27.[1;33m61[m                   Elapsed (wall clock) time (h:mm:ss or m:ss): 0:27.[1;33m72[m          
+        Average shared text size (kbytes): 0                                   Average shared text size (kbytes): 0                          
+        Average unshared data size (kbytes): 0                                 Average unshared data size (kbytes): 0                        
+        Average stack size (kbytes): 0                                         Average stack size (kbytes): 0                                
+        Average total size (kbytes): 0                                         Average total size (kbytes): 0                                
+        Maximum resident set size (kbytes): 2[1;33m009[m4[1;31m9760[m                          Maximum resident set size (kbytes): [1;32m815[m2[1;33m678[m4                  
+        Average resident set size (kbytes): 0                                  Average resident set size (kbytes): 0                         
+        Major (requiring I/O) page faults: 0                                   Major (requiring I/O) page faults: 0                          
+        Minor (reclaiming a frame) page faults: 1[1;33m2503[m                          Minor (reclaiming a frame) page faults: [1;32m93[m1[1;33m4[m                  
+        Voluntary context switches: 0                                          Voluntary context switches: 0                                 
+        Involuntary context switches: [1;31m1[m5[1;31m2[m58[1;33m1[m                                   Involuntary context switches: 558[1;33m05[m                           
+        Swaps: 0                                                               Swaps: 0                                                      
+        File system inputs: 0                                                  File system inputs: 0                                         
+        File system outputs: 0                                                 File system outputs: 0                                        
+        Socket messages sent: 0                                                Socket messages sent: 0                                       
+        Socket messages received: 0                                            Socket messages received: 0                                   

@@ -1,6 +1,16 @@
 #!/bin/bash
-## Dependency brew install gnu_time
+## Dependency brew install gnu_time , icdiff
 ## 
+dateinfo=$(date +%Y-%m-%d-%H%M);
+
+cpudata () { 
+    if [ "$(uname -os)" == "Linux GNU/Linux" ]; then
+        /bin/cat /proc/cpuinfo && lscpu;
+    fi;
+    if [ "$(uname -os)" == "Darwin Darwin" ]; then
+        system_profiler SPHardwareDataType;
+    fi
+}
 
 function move2folder() {
 	mkdir $folder
@@ -20,28 +30,36 @@ function move2folder() {
 function getscore() {
 	# Excutable identification
 	echo "[Info] Identifying excutable to be 32bit or 64bit: "
-	file ./$folder/scimark2 
 	# Small dataset report
-	file ./$folder/scimark2  > scimark2.$suffix
-	echo "[Info] Smaller Number ~1024"
-	gtime -o scimark2_time.$suffix -v ./$folder/scimark2 >> scimark2.$suffix
-	cat scimark2_time.$suffix >> scimark2.$suffix
-	cat scimark2.$suffix
+	rpname=scimark2.$suffix-$folder
+	file ./$folder/scimark2  > $rpname
+	uname -a >> $rpname
+	cpudata >> $rpname
+	echo "[Info] Running Smaller Number ~1024"
+	gtime -o scimark2_time.$suffix -v ./$folder/scimark2 >> $rpname
+	cat scimark2_time.$suffix >> $rpname
 	## Large dataset report
-	echo "[Info] Larger Number ~1048576"
-	gtime -o scimark2_large_time.$suffix -v ./$folder/scimark2 -large  > scimark2_large.$suffix
-	cat scimark2_time_large.$suffix >> scimark2_large.$suffix
-	cat scimark2_large.$suffix
-	## report rellocaiton
-	yes|mv scimark2*.$suffix $folder
+	echo "[Info] Running Larger Number ~1048576"
+	gtime -o scimark2_time_large.$suffix -v ./$folder/scimark2 -large  >> $rpname
+	cat scimark2_time_large.$suffix >> $rpname
+	rm scimark2_time*
+	## Read & report rellocaiton
+	mkdir -p reports/$dateinfo
+	yes|mv $rpname reports/$dateinfo
+}
+
+function reportdiff () {
+	echo "[Info] Report comparision, LEFT: GCC, RIGHT : Clang"
+	icdiff reports/$dateinfo/scimark2.gccscore-gccbin reports/$dateinfo/scimark2.score-newbin > reports/$dateinfo/score.diff
+	cat reports/$dateinfo/score.diff
 }
 
 ## Using mac for scoring
 echo "[Info] Building -- Scimark2 Benchmarking using system compiler..."
-make
+make > /dev/null
 folder=newbin
 suffix=score
-move2folder
+move2folder > /dev/null
 echo "[Info] Testing -- Scimark2 Benchmarking using system compiler..."
 getscore
 
@@ -53,4 +71,5 @@ suffix=gccscore
 move2folder
 echo "[Info] Testing -- Scimark2 Benchmarking using GCC-7 compiler..."
 getscore
+reportdiff
 
