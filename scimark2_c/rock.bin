@@ -1,4 +1,7 @@
 #!/bin/bash
+## Dependency brew install gnu_time
+## 
+
 make clean
 function move2folder() {
 	mkdir $folder
@@ -16,9 +19,11 @@ function move2folder() {
 }
 
 function getscore() {
-	time ./$folder/scimark2 > scimark2.$suffix
+	echo "[Info] Smaller Number ~1024"
+	gtime ./$folder/scimark2 > scimark2.$suffix
 	cat scimark2.$suffix
-	time ./$folder/scimark2 -large > scimark2-large.$suffix
+	echo "[Info] Larger Number ~1048576"
+	gtime ./$folder/scimark2 -large > scimark2-large.$suffix
 	cat scimark2-large.$suffix
 	yes|mv scimark2*.$suffix $folder
 }
