@@ -1,0 +1,90 @@
+./gccbin/scimark2: Mach-O executable i386		      |	./newbin/scimark2: Mach-O executable i386
+Darwin dojos-MacBook-Pro.local 17.0.0 Darwin Kernel Version 1	Darwin dojos-MacBook-Pro.local 17.0.0 Darwin Kernel Version 1
+Hardware:							Hardware:
+
+    Hardware Overview:						    Hardware Overview:
+
+      Model Name: MacBook Pro					      Model Name: MacBook Pro
+      Model Identifier: MacBookPro8,1				      Model Identifier: MacBookPro8,1
+      Processor Name: Intel Core i7				      Processor Name: Intel Core i7
+      Processor Speed: 2.7 GHz					      Processor Speed: 2.7 GHz
+      Number of Processors: 1					      Number of Processors: 1
+      Total Number of Cores: 2					      Total Number of Cores: 2
+      L2 Cache (per Core): 256 KB				      L2 Cache (per Core): 256 KB
+      L3 Cache: 4 MB						      L3 Cache: 4 MB
+      Memory: 8 GB						      Memory: 8 GB
+      Boot ROM Version: MBP81.0047.B39				      Boot ROM Version: MBP81.0047.B39
+      SMC Version (system): 1.68f99				      SMC Version (system): 1.68f99
+      Serial Number (system): C17F8DL3DH2H			      Serial Number (system): C17F8DL3DH2H
+      Hardware UUID: 0A16782E-AE03-541D-80BB-B8591998DFA6	      Hardware UUID: 0A16782E-AE03-541D-80BB-B8591998DFA6
+      Sudden Motion Sensor:					      Sudden Motion Sensor:
+          State: Enabled					          State: Enabled
+
+**                                                           	**                                                           
+** SciMark2 Numeric Benchmark, see http://math.nist.gov/scima	** SciMark2 Numeric Benchmark, see http://math.nist.gov/scima
+** for details. (Results can be submitted to pozo@nist.gov)  	** for details. (Results can be submitted to pozo@nist.gov)  
+**                                                           	**                                                           
+Using       2.00 seconds min time per kenel.			Using       2.00 seconds min time per kenel.
+Composite Score:         1553.85			      |	Composite Score:         2787.98
+FFT             Mflops:  1224.91    (N=1024)		      |	FFT             Mflops:  1736.51    (N=1024)
+SOR             Mflops:  1497.46    (100 x 100)		      |	SOR             Mflops:  1375.22    (100 x 100)
+MonteCarlo:     Mflops:   982.23			      |	MonteCarlo:     Mflops:   842.39
+Sparse matmult  Mflops:  1544.36    (N=1000, nz=5000)	      |	Sparse matmult  Mflops:  7019.37    (N=1000, nz=5000)
+LU              Mflops:  2520.28    (M=100, N=100)	      |	LU              Mflops:  2966.43    (M=100, N=100)
+	Command being timed: "./gccbin/scimark2"	      |		Command being timed: "./newbin/scimark2"
+	User time (seconds): 26.13			      |		User time (seconds): 31.43
+	System time (seconds): 0.17			      |		System time (seconds): 0.24
+	Percent of CPU this job got: 99%		      |		Percent of CPU this job got: 91%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:26.55  |		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:34.56
+	Average shared text size (kbytes): 0				Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0				Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0					Average stack size (kbytes): 0
+	Average total size (kbytes): 0					Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4227072	      |		Maximum resident set size (kbytes): 3473408
+	Average resident set size (kbytes): 0				Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1		      |		Major (requiring I/O) page faults: 101
+	Minor (reclaiming a frame) page faults: 2794	      |		Minor (reclaiming a frame) page faults: 2739
+	Voluntary context switches: 0					Voluntary context switches: 0
+	Involuntary context switches: 21540		      |		Involuntary context switches: 30403
+	Swaps: 0							Swaps: 0
+	File system inputs: 0						File system inputs: 0
+	File system outputs: 0						File system outputs: 0
+	Socket messages sent: 0						Socket messages sent: 0
+	Socket messages received: 0					Socket messages received: 0
+	Signals delivered: 0						Signals delivered: 0
+	Page size (bytes): 4096						Page size (bytes): 4096
+	Exit status: 0							Exit status: 0
+**                                                           	**                                                           
+** SciMark2 Numeric Benchmark, see http://math.nist.gov/scima	** SciMark2 Numeric Benchmark, see http://math.nist.gov/scima
+** for details. (Results can be submitted to pozo@nist.gov)  	** for details. (Results can be submitted to pozo@nist.gov)  
+**                                                           	**                                                           
+Using       2.00 seconds min time per kenel.			Using       2.00 seconds min time per kenel.
+Composite Score:         1176.56			      |	Composite Score:         3010.08
+FFT             Mflops:   233.30    (N=1048576)		      |	FFT             Mflops:   239.60    (N=1048576)
+SOR             Mflops:  1395.49    (1000 x 1000)	      |	SOR             Mflops:  1344.97    (1000 x 1000)
+MonteCarlo:     Mflops:   966.05			      |	MonteCarlo:     Mflops:   835.88
+Sparse matmult  Mflops:  1495.57    (N=100000, nz=1000000)    |	Sparse matmult  Mflops: 10538.82    (N=100000, nz=1000000)
+LU              Mflops:  1792.39    (M=1000, N=1000)	      |	LU              Mflops:  2091.14    (M=1000, N=1000)
+	Command being timed: "./gccbin/scimark2 -large"	      |		Command being timed: "./newbin/scimark2 -large"
+	User time (seconds): 26.59			      |		User time (seconds): 27.10
+	System time (seconds): 0.26			      |		System time (seconds): 0.33
+	Percent of CPU this job got: 98%		      |		Percent of CPU this job got: 92%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:27.32  |		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:29.68
+	Average shared text size (kbytes): 0				Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0				Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0					Average stack size (kbytes): 0
+	Average total size (kbytes): 0					Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 125566976	      |		Maximum resident set size (kbytes): 70074368
+	Average resident set size (kbytes): 0				Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 13		      |		Major (requiring I/O) page faults: 90
+	Minor (reclaiming a frame) page faults: 16241	      |		Minor (reclaiming a frame) page faults: 10561
+	Voluntary context switches: 0					Voluntary context switches: 0
+	Involuntary context switches: 22545		      |		Involuntary context switches: 39286
+	Swaps: 0							Swaps: 0
+	File system inputs: 0						File system inputs: 0
+	File system outputs: 0						File system outputs: 0
+	Socket messages sent: 0						Socket messages sent: 0
+	Socket messages received: 0					Socket messages received: 0
+	Signals delivered: 0						Signals delivered: 0
+	Page size (bytes): 4096						Page size (bytes): 4096
+	Exit status: 0							Exit status: 0
