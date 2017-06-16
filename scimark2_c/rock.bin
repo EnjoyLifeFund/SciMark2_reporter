@@ -69,7 +69,7 @@ getscore
 
 ## Using GCC for scoring
 echo "[Info] Building -- Scimark2 Benchmarking using GCC-7 compiler..."
-./gccmake2 
+./gccmake
 folder=gccbin
 suffix=gccscore
 move2folder

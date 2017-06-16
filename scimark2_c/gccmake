@@ -8,4 +8,4 @@ gcc-7 -g -c $CFLAGS -Ofast -flto SparseCompRow.c
 gcc-7 -g -c $CFLAGS -Ofast -flto array.c
 gcc-7 -g -c $CFLAGS -Ofast -flto MonteCarlo.c
 gcc-7 -g -c $CFLAGS -Ofast -flto LU.c
-gcc-7 -o scimark2 scimark2.o FFT.o kernel.o Stopwatch.o Random.o SOR.o SparseCompRow.o array.o MonteCarlo.o LU.o $LDFLAGS -lm
+gcc-7 -o scimark2 scimark2.o FFT.o kernel.o Stopwatch.o Random.o SOR.o SparseCompRow.o array.o MonteCarlo.o LU.o $LDFLAGS $CFLAGS -lm
