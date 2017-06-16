@@ -25,27 +25,27 @@ Hardware:							Hardware:
 ** for details. (Results can be submitted to pozo@nist.gov)  	** for details. (Results can be submitted to pozo@nist.gov)  
 **                                                           	**                                                           
 Using       2.00 seconds min time per kenel.			Using       2.00 seconds min time per kenel.
-Composite Score:         1553.85			      |	Composite Score:         2787.98
-FFT             Mflops:  1224.91    (N=1024)		      |	FFT             Mflops:  1736.51    (N=1024)
-SOR             Mflops:  1497.46    (100 x 100)		      |	SOR             Mflops:  1375.22    (100 x 100)
-MonteCarlo:     Mflops:   982.23			      |	MonteCarlo:     Mflops:   842.39
-Sparse matmult  Mflops:  1544.36    (N=1000, nz=5000)	      |	Sparse matmult  Mflops:  7019.37    (N=1000, nz=5000)
-LU              Mflops:  2520.28    (M=100, N=100)	      |	LU              Mflops:  2966.43    (M=100, N=100)
+Composite Score:         1583.35			      |	Composite Score:         2831.67
+FFT             Mflops:  1216.55    (N=1024)		      |	FFT             Mflops:  1667.93    (N=1024)
+SOR             Mflops:  1493.95    (100 x 100)		      |	SOR             Mflops:  1482.17    (100 x 100)
+MonteCarlo:     Mflops:  1039.06			      |	MonteCarlo:     Mflops:   869.43
+Sparse matmult  Mflops:  1651.13    (N=1000, nz=5000)	      |	Sparse matmult  Mflops:  7292.47    (N=1000, nz=5000)
+LU              Mflops:  2516.07    (M=100, N=100)	      |	LU              Mflops:  2846.37    (M=100, N=100)
 	Command being timed: "./gccbin/scimark2"	      |		Command being timed: "./newbin/scimark2"
-	User time (seconds): 26.13			      |		User time (seconds): 31.43
-	System time (seconds): 0.17			      |		System time (seconds): 0.24
-	Percent of CPU this job got: 99%		      |		Percent of CPU this job got: 91%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:26.55  |		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:34.56
+	User time (seconds): 25.64			      |		User time (seconds): 27.64
+	System time (seconds): 0.13			      |		System time (seconds): 0.14
+	Percent of CPU this job got: 99%		      |		Percent of CPU this job got: 92%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:26.03  |		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:29.91
 	Average shared text size (kbytes): 0				Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0				Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0					Average stack size (kbytes): 0
 	Average total size (kbytes): 0					Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4227072	      |		Maximum resident set size (kbytes): 3473408
+	Maximum resident set size (kbytes): 4472832	      |		Maximum resident set size (kbytes): 3850240
 	Average resident set size (kbytes): 0				Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 1		      |		Major (requiring I/O) page faults: 101
-	Minor (reclaiming a frame) page faults: 2794	      |		Minor (reclaiming a frame) page faults: 2739
+	Major (requiring I/O) page faults: 3		      |		Major (requiring I/O) page faults: 104
+	Minor (reclaiming a frame) page faults: 2753	      |		Minor (reclaiming a frame) page faults: 2370
 	Voluntary context switches: 0					Voluntary context switches: 0
-	Involuntary context switches: 21540		      |		Involuntary context switches: 30403
+	Involuntary context switches: 14436		      |		Involuntary context switches: 13022
 	Swaps: 0							Swaps: 0
 	File system inputs: 0						File system inputs: 0
 	File system outputs: 0						File system outputs: 0
@@ -59,27 +59,27 @@ LU              Mflops:  2520.28    (M=100, N=100)	      |	LU              Mflop
 ** for details. (Results can be submitted to pozo@nist.gov)  	** for details. (Results can be submitted to pozo@nist.gov)  
 **                                                           	**                                                           
 Using       2.00 seconds min time per kenel.			Using       2.00 seconds min time per kenel.
-Composite Score:         1176.56			      |	Composite Score:         3010.08
-FFT             Mflops:   233.30    (N=1048576)		      |	FFT             Mflops:   239.60    (N=1048576)
-SOR             Mflops:  1395.49    (1000 x 1000)	      |	SOR             Mflops:  1344.97    (1000 x 1000)
-MonteCarlo:     Mflops:   966.05			      |	MonteCarlo:     Mflops:   835.88
-Sparse matmult  Mflops:  1495.57    (N=100000, nz=1000000)    |	Sparse matmult  Mflops: 10538.82    (N=100000, nz=1000000)
-LU              Mflops:  1792.39    (M=1000, N=1000)	      |	LU              Mflops:  2091.14    (M=1000, N=1000)
+Composite Score:         1150.50			      |	Composite Score:         3417.81
+FFT             Mflops:   233.04    (N=1048576)		      |	FFT             Mflops:   242.98    (N=1048576)
+SOR             Mflops:  1307.22    (1000 x 1000)	      |	SOR             Mflops:  1296.34    (1000 x 1000)
+MonteCarlo:     Mflops:  1030.45			      |	MonteCarlo:     Mflops:   955.49
+Sparse matmult  Mflops:  1494.33    (N=100000, nz=1000000)    |	Sparse matmult  Mflops: 12457.17    (N=100000, nz=1000000)
+LU              Mflops:  1687.46    (M=1000, N=1000)	      |	LU              Mflops:  2137.05    (M=1000, N=1000)
 	Command being timed: "./gccbin/scimark2 -large"	      |		Command being timed: "./newbin/scimark2 -large"
-	User time (seconds): 26.59			      |		User time (seconds): 27.10
-	System time (seconds): 0.26			      |		System time (seconds): 0.33
-	Percent of CPU this job got: 98%		      |		Percent of CPU this job got: 92%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:27.32  |		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:29.68
+	User time (seconds): 27.08			      |		User time (seconds): 25.81
+	System time (seconds): 0.28			      |		System time (seconds): 0.17
+	Percent of CPU this job got: 96%		      |		Percent of CPU this job got: 94%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:28.50  |		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:27.60
 	Average shared text size (kbytes): 0				Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0				Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0					Average stack size (kbytes): 0
 	Average total size (kbytes): 0					Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 125566976	      |		Maximum resident set size (kbytes): 70074368
+	Maximum resident set size (kbytes): 92798976	      |		Maximum resident set size (kbytes): 82083840
 	Average resident set size (kbytes): 0				Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 13		      |		Major (requiring I/O) page faults: 90
-	Minor (reclaiming a frame) page faults: 16241	      |		Minor (reclaiming a frame) page faults: 10561
+	Major (requiring I/O) page faults: 45		      |		Major (requiring I/O) page faults: 88
+	Minor (reclaiming a frame) page faults: 13605	      |		Minor (reclaiming a frame) page faults: 11188
 	Voluntary context switches: 0					Voluntary context switches: 0
-	Involuntary context switches: 22545		      |		Involuntary context switches: 39286
+	Involuntary context switches: 22866		      |		Involuntary context switches: 10555
 	Swaps: 0							Swaps: 0
 	File system inputs: 0						File system inputs: 0
 	File system outputs: 0						File system outputs: 0

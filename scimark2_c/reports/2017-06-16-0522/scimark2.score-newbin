@@ -1,4 +1,4 @@
-./gccbin/scimark2: Mach-O executable i386
+./newbin/scimark2: Mach-O executable i386
 Darwin dojos-MacBook-Pro.local 17.0.0 Darwin Kernel Version 17.0.0: Mon May 29 20:35:50 PDT 2017; root:xnu-4397.0.0.1.13~1/RELEASE_X86_64 x86_64 i386 MacBookPro8,1 Darwin
 Hardware:
 
@@ -25,27 +25,27 @@ Hardware:
 ** for details. (Results can be submitted to pozo@nist.gov)     **
 **                                                              **
 Using       2.00 seconds min time per kenel.
-Composite Score:         1553.85
-FFT             Mflops:  1224.91    (N=1024)
-SOR             Mflops:  1497.46    (100 x 100)
-MonteCarlo:     Mflops:   982.23
-Sparse matmult  Mflops:  1544.36    (N=1000, nz=5000)
-LU              Mflops:  2520.28    (M=100, N=100)
-	Command being timed: "./gccbin/scimark2"
-	User time (seconds): 26.13
-	System time (seconds): 0.17
-	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:26.55
+Composite Score:         2831.67
+FFT             Mflops:  1667.93    (N=1024)
+SOR             Mflops:  1482.17    (100 x 100)
+MonteCarlo:     Mflops:   869.43
+Sparse matmult  Mflops:  7292.47    (N=1000, nz=5000)
+LU              Mflops:  2846.37    (M=100, N=100)
+	Command being timed: "./newbin/scimark2"
+	User time (seconds): 27.64
+	System time (seconds): 0.14
+	Percent of CPU this job got: 92%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:29.91
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4227072
+	Maximum resident set size (kbytes): 3850240
 	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 1
-	Minor (reclaiming a frame) page faults: 2794
+	Major (requiring I/O) page faults: 104
+	Minor (reclaiming a frame) page faults: 2370
 	Voluntary context switches: 0
-	Involuntary context switches: 21540
+	Involuntary context switches: 13022
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -59,27 +59,27 @@ LU              Mflops:  2520.28    (M=100, N=100)
 ** for details. (Results can be submitted to pozo@nist.gov)     **
 **                                                              **
 Using       2.00 seconds min time per kenel.
-Composite Score:         1176.56
-FFT             Mflops:   233.30    (N=1048576)
-SOR             Mflops:  1395.49    (1000 x 1000)
-MonteCarlo:     Mflops:   966.05
-Sparse matmult  Mflops:  1495.57    (N=100000, nz=1000000)
-LU              Mflops:  1792.39    (M=1000, N=1000)
-	Command being timed: "./gccbin/scimark2 -large"
-	User time (seconds): 26.59
-	System time (seconds): 0.26
-	Percent of CPU this job got: 98%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:27.32
+Composite Score:         3417.81
+FFT             Mflops:   242.98    (N=1048576)
+SOR             Mflops:  1296.34    (1000 x 1000)
+MonteCarlo:     Mflops:   955.49
+Sparse matmult  Mflops: 12457.17    (N=100000, nz=1000000)
+LU              Mflops:  2137.05    (M=1000, N=1000)
+	Command being timed: "./newbin/scimark2 -large"
+	User time (seconds): 25.81
+	System time (seconds): 0.17
+	Percent of CPU this job got: 94%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:27.60
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 125566976
+	Maximum resident set size (kbytes): 82083840
 	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 13
-	Minor (reclaiming a frame) page faults: 16241
+	Major (requiring I/O) page faults: 88
+	Minor (reclaiming a frame) page faults: 11188
 	Voluntary context switches: 0
-	Involuntary context switches: 22545
+	Involuntary context switches: 10555
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
