@@ -4,10 +4,10 @@
 dateinfo=$(date +%Y-%m-%d-%H%M);
 
 cpudata () { 
-    if [ "$(uname -os)" == "Linux GNU/Linux" ]; then
+    if [ "$(uname -s)" == "Linux" ]; then
         /bin/cat /proc/cpuinfo && lscpu;
     fi;
-    if [ "$(uname -os)" == "Darwin Darwin" ]; then
+    if [ "$(uname -s)" == "Darwin" ]; then
         system_profiler SPHardwareDataType;
     fi
 }
@@ -56,6 +56,8 @@ function reportdiff () {
 	cat -n reports/$dateinfo/score.diff
 	echo "[DIFF REPORT SUMMARY]"
 	cat score-diff.summary
+	gcc -v
+	cc -v	
 }
 
 ## Using mac for scoring
