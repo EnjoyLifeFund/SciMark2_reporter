@@ -1,11 +1,11 @@
-gcc -g -c $CFLAGS -Ofast -flto scimark2.c
-gcc -g -c $CFLAGS -Ofast -flto FFT.c
-gcc -g -c $CFLAGS -Ofast -flto kernel.c
-gcc -g -c $CFLAGS -Ofast -flto Stopwatch.c
-gcc -g -c $CFLAGS -Ofast -flto Random.c
-gcc -g -c $CFLAGS -Ofast -flto SOR.c
-gcc -g -c $CFLAGS -Ofast -flto SparseCompRow.c
-gcc -g -c $CFLAGS -Ofast -flto array.c
-gcc -g -c $CFLAGS -Ofast -flto MonteCarlo.c
-gcc -g -c $CFLAGS -Ofast -flto LU.c
+gcc -g -c $LDFLAGS $CFLAGS -Ofast -flto scimark2.c
+gcc -g -c $LDFLAGS $CFLAGS -Ofast -flto FFT.c
+gcc -g -c $LDFLAGS $CFLAGS -Ofast -flto kernel.c
+gcc -g -c $LDFLAGS $CFLAGS -Ofast -flto Stopwatch.c
+gcc -g -c $LDFLAGS $CFLAGS -Ofast -flto Random.c
+gcc -g -c $LDFLAGS $CFLAGS -Ofast -flto SOR.c
+gcc -g -c $LDFLAGS $CFLAGS -Ofast -flto SparseCompRow.c
+gcc -g -c $LDFLAGS $CFLAGS -Ofast -flto array.c
+gcc -g -c $LDFLAGS $CFLAGS -Ofast -flto MonteCarlo.c
+gcc -g -c $LDFLAGS $CFLAGS -Ofast -flto LU.c
 gcc -o scimark2 scimark2.o FFT.o kernel.o Stopwatch.o Random.o SOR.o SparseCompRow.o array.o MonteCarlo.o LU.o $LDFLAGS $CFLAGS -lm
