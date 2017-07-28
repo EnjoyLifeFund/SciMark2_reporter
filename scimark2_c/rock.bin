@@ -66,7 +66,7 @@ function reportdiff () {
 	cc -v  >>score-diff.summary
 	macdev >>score-diff.summary
 	cat score-diff.summary
-    yes|mv score-diff.summary reports/$dateinfo
+    yes|cp score-diff.summary reports/$dateinfo
 }
 
 
