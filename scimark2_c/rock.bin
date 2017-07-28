@@ -66,6 +66,7 @@ function reportdiff () {
 	cc -v  >>score-diff.summary
 	macdev >>score-diff.summary
 	cat score-diff.summary
+    yes|mv score-diff.summary reports/$dateinfo
 }
 
 
@@ -83,7 +84,7 @@ echo "[Info] Building -- Scimark2 Benchmarking using GCC-7 compiler..."
 ./gccmake
 folder=gccbin
 suffix=gccscore
-move2folder
+move2folder > /dev/null
 echo "[Info] Testing -- Scimark2 Benchmarking using GCC-7 compiler..."
 getscore
 reportdiff
