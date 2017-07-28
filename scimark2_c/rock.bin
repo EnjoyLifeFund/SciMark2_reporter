@@ -48,6 +48,13 @@ function getscore() {
 	yes|mv $rpname reports/$dateinfo
 }
 
+
+function macdev() {
+	echo "________________________________________________________________________________"
+	echo "COMPILERS:" $CC @ $CPP @ $CXX @ $CXXCPP 
+	echo "FLAGS:"  $ARCHFLAGS @  @ $CFLAGS @ $FFLAGS @ $LDFLAGS
+}
+
 function reportdiff () {
 	echo "[Info] Report comparision, LEFT: GCC, RIGHT : Clang"
 	### sdiff or icdiff
@@ -55,10 +62,12 @@ function reportdiff () {
 	cat -n reports/$dateinfo/score.diff | grep "|" > score-diff.summary
 	cat -n reports/$dateinfo/score.diff
 	echo "[DIFF REPORT SUMMARY]"
+	gcc -v >>score-diff.summary
+	cc -v  >>score-diff.summary
+	macdev >>score-diff.summary
 	cat score-diff.summary
-	gcc -v
-	cc -v	
 }
+
 
 ## Using mac for scoring
 echo "[Info] Building -- Scimark2 Benchmarking using system compiler..."
