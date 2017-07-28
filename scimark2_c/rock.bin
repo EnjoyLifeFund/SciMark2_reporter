@@ -56,17 +56,18 @@ function macdev() {
 }
 
 function reportdiff () {
+	summaryfile=score-diff.txt
 	echo "[Info] Report comparision, LEFT: GCC, RIGHT : Clang"
 	### sdiff or icdiff
 	diff --side-by-side reports/$dateinfo/scimark2.gccscore-gccbin reports/$dateinfo/scimark2.score-newbin > reports/$dateinfo/score.diff
-	cat -n reports/$dateinfo/score.diff | grep "|" > score-diff.summary
+	cat -n reports/$dateinfo/score.diff | grep "|" > $summaryfile
 	cat -n reports/$dateinfo/score.diff
 	echo "[DIFF REPORT SUMMARY]"
-	gcc -v >>score-diff.summary
-	cc -v  >>score-diff.summary
-	macdev >>score-diff.summary
-	cat score-diff.summary
-    yes|cp score-diff.summary reports/$dateinfo
+	gcc -v >>$summaryfile
+	cc -v  >>$summaryfile
+	macdev >>$summaryfile
+	cat $summaryfile
+    yes|cp $summaryfile reports/$dateinfo
 }
 
 
