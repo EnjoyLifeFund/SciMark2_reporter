@@ -46,6 +46,7 @@ function getscore() {
 	## Read & report rellocaiton
 	mkdir -p reports/$dateinfo
 	yes|mv $rpname reports/$dateinfo
+	yes|cp $folder/scimark2 reports/$dateinfo/scimark2.$suffix
 }
 
 
