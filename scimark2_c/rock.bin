@@ -72,7 +72,7 @@ function reportdiff () {
 
 ## Using mac for scoring
 echo "[Info] Building -- Scimark2 Benchmarking using system compiler..."
-make 
+make  > /dev/null
 folder=newbin
 suffix=score
 move2folder > /dev/null
@@ -81,7 +81,7 @@ getscore
 
 ## Using GCC for scoring
 echo "[Info] Building -- Scimark2 Benchmarking using GCC-7 compiler..."
-./gccmake 
+./gccmake  > /dev/null
 folder=gccbin
 suffix=gccscore
 move2folder  > /dev/null
