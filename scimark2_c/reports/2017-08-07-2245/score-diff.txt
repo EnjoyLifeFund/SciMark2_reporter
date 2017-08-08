@@ -1,0 +1,35 @@
+     1	./gccbin/scimark2: Mach-O executable i386		      |	./newbin/scimark2: Mach-O executable i386
+    28	Composite Score:         2744.06			      |	Composite Score:         2643.37
+    29	FFT             Mflops:  1547.46    (N=1024)		      |	FFT             Mflops:  1597.48    (N=1024)
+    30	SOR             Mflops:  1323.68    (100 x 100)		      |	SOR             Mflops:  1406.06    (100 x 100)
+    31	MonteCarlo:     Mflops:   863.51			      |	MonteCarlo:     Mflops:   798.42
+    32	Sparse matmult  Mflops:  7164.23    (N=1000, nz=5000)	      |	Sparse matmult  Mflops:  6516.35    (N=1000, nz=5000)
+    33	LU              Mflops:  2821.43    (M=100, N=100)	      |	LU              Mflops:  2898.54    (M=100, N=100)
+    34		Command being timed: "./gccbin/scimark2"	      |		Command being timed: "./newbin/scimark2"
+    35		User time (seconds): 28.54			      |		User time (seconds): 29.07
+    36		System time (seconds): 0.22			      |		System time (seconds): 0.23
+    37		Percent of CPU this job got: 91%		      |		Percent of CPU this job got: 87%
+    38		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:31.47  |		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:33.65
+    43		Maximum resident set size (kbytes): 4227072	      |		Maximum resident set size (kbytes): 4046848
+    45		Major (requiring I/O) page faults: 94		      |		Major (requiring I/O) page faults: 137
+    46		Minor (reclaiming a frame) page faults: 2487	      |		Minor (reclaiming a frame) page faults: 2445
+    47		Voluntary context switches: 0			      |		Voluntary context switches: 3
+    48		Involuntary context switches: 21477		      |		Involuntary context switches: 20859
+    62	Composite Score:         3148.81			      |	Composite Score:         3140.76
+    63	FFT             Mflops:   230.34    (N=1048576)		      |	FFT             Mflops:   230.55    (N=1048576)
+    64	SOR             Mflops:  1262.95    (1000 x 1000)	      |	SOR             Mflops:  1314.94    (1000 x 1000)
+    65	MonteCarlo:     Mflops:   876.98			      |	MonteCarlo:     Mflops:   829.85
+    66	Sparse matmult  Mflops: 11212.85    (N=100000, nz=1000000)    |	Sparse matmult  Mflops: 11187.02    (N=100000, nz=1000000)
+    67	LU              Mflops:  2160.94    (M=1000, N=1000)	      |	LU              Mflops:  2141.45    (M=1000, N=1000)
+    68		Command being timed: "./gccbin/scimark2 -large"	      |		Command being timed: "./newbin/scimark2 -large"
+    69		User time (seconds): 26.92			      |		User time (seconds): 27.21
+    70		System time (seconds): 0.31			      |		System time (seconds): 0.28
+    71		Percent of CPU this job got: 90%		      |		Percent of CPU this job got: 85%
+    72		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:29.98  |		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:32.00
+    77		Maximum resident set size (kbytes): 70090752	      |		Maximum resident set size (kbytes): 84377600
+    79		Major (requiring I/O) page faults: 83		      |		Major (requiring I/O) page faults: 86
+    80		Minor (reclaiming a frame) page faults: 10570	      |		Minor (reclaiming a frame) page faults: 11451
+    82		Involuntary context switches: 31571		      |		Involuntary context switches: 21074
+________________________________________________________________________________
+COMPILERS: cc @ cc -E @ g++ @ g++ -E
+FLAGS: @ @ -fomit-frame-pointer -funroll-loops -ffast-math -Ofast -fno-signed-zeros -ffp-contract=fast -mmmx -msse -flto -m32 @ -fomit-frame-pointer -funroll-loops -ffast-math -Ofast -fno-signed-zeros -ffp-contract=fast -mmmx -msse -flto -m32 -ffast-math -Ofast -fno-signed-zeros -ffp-contract=fast -mmmx -msse -flto -m32 @ -L/usr/local/opt/openblas/lib -L/usr/local/opt/llvm/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib
