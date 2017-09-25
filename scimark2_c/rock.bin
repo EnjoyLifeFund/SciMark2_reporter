@@ -2,7 +2,7 @@
 ## Dependency brew install gnu_time , icdiff
 ## 
 dateinfo=$(date +%Y-%m-%d-%H%M);
-
+alias gtime='/home/linuxbrew/.linuxbrew/bin/time'
 cpudata () { 
     if [ "$(uname -s)" == "Linux" ]; then
         /bin/cat /proc/cpuinfo && lscpu;

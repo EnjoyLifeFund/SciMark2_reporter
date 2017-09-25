@@ -1,0 +1,32 @@
+     1	./gccbin/scimark2: ELF 64-bit LSB executable, x86-64, version |	./newbin/scimark2: ELF 64-bit LSB executable, x86-64, version
+    59	Composite Score:         1851.42			      |	Composite Score:         1863.47
+    60	FFT             Mflops:  1406.28    (N=1024)		      |	FFT             Mflops:  1406.35    (N=1024)
+    61	SOR             Mflops:  1643.41    (100 x 100)		      |	SOR             Mflops:  1650.82    (100 x 100)
+    62	MonteCarlo:     Mflops:   845.15			      |	MonteCarlo:     Mflops:   844.08
+    63	Sparse matmult  Mflops:  1464.39    (N=1000, nz=5000)	      |	Sparse matmult  Mflops:  1462.12    (N=1000, nz=5000)
+    64	LU              Mflops:  3897.88    (M=100, N=100)	      |	LU              Mflops:  3953.96    (M=100, N=100)
+    65		Command being timed: "./gccbin/scimark2"	      |		Command being timed: "./newbin/scimark2"
+    66		User time (seconds): 27.47			      |		User time (seconds): 27.38
+    68		Percent of CPU this job got: 77%		      |		Percent of CPU this job got: 86%
+    69		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:35.39  |		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:31.69
+    74		Maximum resident set size (kbytes): 8640	      |		Maximum resident set size (kbytes): 8208
+    77		Minor (reclaiming a frame) page faults: 124	      |		Minor (reclaiming a frame) page faults: 119
+    79		Involuntary context switches: 3944		      |		Involuntary context switches: 3043
+    82		File system outputs: 8				      |		File system outputs: 0
+    93	Composite Score:         1588.85			      |	Composite Score:         1584.07
+    94	FFT             Mflops:   259.57    (N=1048576)		      |	FFT             Mflops:   254.14    (N=1048576)
+    95	SOR             Mflops:  1462.65    (1000 x 1000)	      |	SOR             Mflops:  1443.61    (1000 x 1000)
+    96	MonteCarlo:     Mflops:   845.19			      |	MonteCarlo:     Mflops:   842.92
+    97	Sparse matmult  Mflops:  1330.22    (N=100000, nz=1000000)    |	Sparse matmult  Mflops:  1331.96    (N=100000, nz=1000000)
+    98	LU              Mflops:  4046.60    (M=1000, N=1000)	      |	LU              Mflops:  4047.73    (M=1000, N=1000)
+    99		Command being timed: "./gccbin/scimark2 -large"	      |		Command being timed: "./newbin/scimark2 -large"
+   100		User time (seconds): 26.79			      |		User time (seconds): 26.85
+   101		System time (seconds): 0.03			      |		System time (seconds): 0.01
+   102		Percent of CPU this job got: 66%		      |		Percent of CPU this job got: 77%
+   103		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:40.13  |		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:34.72
+   108		Maximum resident set size (kbytes): 71152	      |		Maximum resident set size (kbytes): 71216
+   111		Minor (reclaiming a frame) page faults: 8098	      |		Minor (reclaiming a frame) page faults: 8099
+   113		Involuntary context switches: 4426		      |		Involuntary context switches: 3720
+________________________________________________________________________________
+COMPILERS: gcc-5 @ gcc-5 -E @ gcc-5 @ gcc-5 -E
+FLAGS: -march=native @ @ -fomit-frame-pointer -funroll-loops -ffast-math -Ofast -fno-signed-zeros -ffp-contract=fast -mmmx -msse -maes -march=native -flto @ -fomit-frame-pointer -funroll-loops -ffast-math -Ofast -fno-signed-zeros -ffp-contract=fast -mmmx -msse -maes -march=native -flto -ffast-math -Ofast -fno-signed-zeros -ffp-contract=fast -mmmx -msse -maes -march=native -flto @ -L/home/linuxbrew/.linuxbrew/opt/libmetalink/lib -L/home/linuxbrew/.linuxbrew/opt/rtmpdump/lib -L/home/linuxbrew/.linuxbrew/opt/perl/lib -L/home/linuxbrew/.linuxbrew/opt/python3/lib -L/home/linuxbrew/.linuxbrew/opt/aws-sdk-cpp/lib -L/home/linuxbrew/.linuxbrew/opt/valgrind/lib -L/home/linuxbrew/.linuxbrew/opt/suite-sparse/lib -L/home/linuxbrew/.linuxbrew/opt/grt/lib -L/home/linuxbrew/.linuxbrew/opt/opencl/lib -L/home/linuxbrew/.linuxbrew/opt/libarchive/lib -L/home/linuxbrew/.linuxbrew/opt/thrift/lib -L/home/linuxbrew/.linuxbrew/opt/icu4c/lib -L/home/linuxbrew/.linuxbrew/opt/sqlite/lib -L/home/linuxbrew/.linuxbrew/opt/binutils/lib -L/home/linuxbrew/.linuxbrew/opt/libiconv/lib -L/home/linuxbrew/.linuxbrew/opt/libunistring/lib -L/home/linuxbrew/.linuxbrew/opt/libtool/lib -L/home/linuxbrew/.linuxbrew/opt/libkml/lib -L/home/linuxbrew/.linuxbrew/opt/openblas/lib -L/home/linuxbrew/.linuxbrew/opt/lapack/lib -L/home/linuxbrew/.linuxbrew/opt/gettext/lib -L/home/linuxbrew/.linuxbrew/opt/tbb/lib -L/home/linuxbrew/.linuxbrew/opt/open-mpi/lib -L/home/linuxbrew/.linuxbrew/opt/boost-python/lib -L/home/linuxbrew/.linuxbrew/opt/boost-mpi/lib -L/home/linuxbrew/.linuxbrew/opt/boost/lib -L/home/linuxbrew/.linuxbrew/opt/ncurses/lib -L/home/linuxbrew/.linuxbrew/opt/llvm/lib -L/home/linuxbrew/.linuxbrew/opt/mpfr/lib -L/home/linuxbrew/.linuxbrew/opt/gmp/lib -L/home/linuxbrew/.linuxbrew/opt/bison/lib -L/home/linuxbrew/.linuxbrew/opt/zlib/lib -L/home/linuxbrew/.linuxbrew/opt/xz/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/openssl/lib -L/home/linuxbrew/.linuxbrew/opt/gcc/lib -L/opt/X11/lib -L/usr/local/Cellar/gcc/7.2.0/lib/gcc/7 -L/usr/local/opt/python3/lib -L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib -L/usr/local/cuda/lib -L/usr/local/cuda/nvvm/lib

@@ -1,0 +1,121 @@
+./gccbin/scimark2: ELF 64-bit LSB executable, x86-64, version |	./newbin/scimark2: ELF 64-bit LSB executable, x86-64, version
+Linux job-security.org 4.11.11-300.fc26.x86_64 #1 SMP Mon Jul	Linux job-security.org 4.11.11-300.fc26.x86_64 #1 SMP Mon Jul
+processor	: 0						processor	: 0
+vendor_id	: GenuineIntel					vendor_id	: GenuineIntel
+cpu family	: 6						cpu family	: 6
+model		: 63						model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz	model name	: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
+stepping	: 2						stepping	: 2
+microcode	: 0x25						microcode	: 0x25
+cpu MHz		: 2400.003					cpu MHz		: 2400.003
+cache size	: 30720 KB					cache size	: 30720 KB
+physical id	: 0						physical id	: 0
+siblings	: 1						siblings	: 1
+core id		: 0						core id		: 0
+cpu cores	: 1						cpu cores	: 1
+apicid		: 0						apicid		: 0
+initial apicid	: 0						initial apicid	: 0
+fpu		: yes						fpu		: yes
+fpu_exception	: yes						fpu_exception	: yes
+cpuid level	: 13						cpuid level	: 13
+wp		: yes						wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep	flags		: fpu vme de pse tsc msr pae mce cx8 apic sep
+bugs		:						bugs		:
+bogomips	: 4800.18					bogomips	: 4800.18
+clflush size	: 64						clflush size	: 64
+cache_alignment	: 64						cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual		address sizes	: 46 bits physical, 48 bits virtual
+power management:						power management:
+
+Architecture:        x86_64					Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit				CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian				Byte Order:          Little Endian
+CPU(s):              1						CPU(s):              1
+On-line CPU(s) list: 0						On-line CPU(s) list: 0
+Thread(s) per core:  1						Thread(s) per core:  1
+Core(s) per socket:  1						Core(s) per socket:  1
+Socket(s):           1						Socket(s):           1
+NUMA node(s):        1						NUMA node(s):        1
+Vendor ID:           GenuineIntel				Vendor ID:           GenuineIntel
+CPU family:          6						CPU family:          6
+Model:               63						Model:               63
+Model name:          Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GH	Model name:          Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GH
+Stepping:            2						Stepping:            2
+CPU MHz:             2400.003					CPU MHz:             2400.003
+BogoMIPS:            4800.18					BogoMIPS:            4800.18
+Hypervisor vendor:   Xen					Hypervisor vendor:   Xen
+Virtualization type: full					Virtualization type: full
+L1d cache:           32K					L1d cache:           32K
+L1i cache:           32K					L1i cache:           32K
+L2 cache:            256K					L2 cache:            256K
+L3 cache:            30720K					L3 cache:            30720K
+NUMA node0 CPU(s):   0						NUMA node0 CPU(s):   0
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic 	Flags:               fpu vme de pse tsc msr pae mce cx8 apic 
+**                                                           	**                                                           
+** SciMark2 Numeric Benchmark, see http://math.nist.gov/scima	** SciMark2 Numeric Benchmark, see http://math.nist.gov/scima
+** for details. (Results can be submitted to pozo@nist.gov)  	** for details. (Results can be submitted to pozo@nist.gov)  
+**                                                           	**                                                           
+Using       2.00 seconds min time per kenel.			Using       2.00 seconds min time per kenel.
+Composite Score:         1851.42			      |	Composite Score:         1863.47
+FFT             Mflops:  1406.28    (N=1024)		      |	FFT             Mflops:  1406.35    (N=1024)
+SOR             Mflops:  1643.41    (100 x 100)		      |	SOR             Mflops:  1650.82    (100 x 100)
+MonteCarlo:     Mflops:   845.15			      |	MonteCarlo:     Mflops:   844.08
+Sparse matmult  Mflops:  1464.39    (N=1000, nz=5000)	      |	Sparse matmult  Mflops:  1462.12    (N=1000, nz=5000)
+LU              Mflops:  3897.88    (M=100, N=100)	      |	LU              Mflops:  3953.96    (M=100, N=100)
+	Command being timed: "./gccbin/scimark2"	      |		Command being timed: "./newbin/scimark2"
+	User time (seconds): 27.47			      |		User time (seconds): 27.38
+	System time (seconds): 0.00					System time (seconds): 0.00
+	Percent of CPU this job got: 77%		      |		Percent of CPU this job got: 86%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:35.39  |		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:31.69
+	Average shared text size (kbytes): 0				Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0				Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0					Average stack size (kbytes): 0
+	Average total size (kbytes): 0					Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8640	      |		Maximum resident set size (kbytes): 8208
+	Average resident set size (kbytes): 0				Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0				Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 124	      |		Minor (reclaiming a frame) page faults: 119
+	Voluntary context switches: 1					Voluntary context switches: 1
+	Involuntary context switches: 3944		      |		Involuntary context switches: 3043
+	Swaps: 0							Swaps: 0
+	File system inputs: 0						File system inputs: 0
+	File system outputs: 8				      |		File system outputs: 0
+	Socket messages sent: 0						Socket messages sent: 0
+	Socket messages received: 0					Socket messages received: 0
+	Signals delivered: 0						Signals delivered: 0
+	Page size (bytes): 4096						Page size (bytes): 4096
+	Exit status: 0							Exit status: 0
+**                                                           	**                                                           
+** SciMark2 Numeric Benchmark, see http://math.nist.gov/scima	** SciMark2 Numeric Benchmark, see http://math.nist.gov/scima
+** for details. (Results can be submitted to pozo@nist.gov)  	** for details. (Results can be submitted to pozo@nist.gov)  
+**                                                           	**                                                           
+Using       2.00 seconds min time per kenel.			Using       2.00 seconds min time per kenel.
+Composite Score:         1588.85			      |	Composite Score:         1584.07
+FFT             Mflops:   259.57    (N=1048576)		      |	FFT             Mflops:   254.14    (N=1048576)
+SOR             Mflops:  1462.65    (1000 x 1000)	      |	SOR             Mflops:  1443.61    (1000 x 1000)
+MonteCarlo:     Mflops:   845.19			      |	MonteCarlo:     Mflops:   842.92
+Sparse matmult  Mflops:  1330.22    (N=100000, nz=1000000)    |	Sparse matmult  Mflops:  1331.96    (N=100000, nz=1000000)
+LU              Mflops:  4046.60    (M=1000, N=1000)	      |	LU              Mflops:  4047.73    (M=1000, N=1000)
+	Command being timed: "./gccbin/scimark2 -large"	      |		Command being timed: "./newbin/scimark2 -large"
+	User time (seconds): 26.79			      |		User time (seconds): 26.85
+	System time (seconds): 0.03			      |		System time (seconds): 0.01
+	Percent of CPU this job got: 66%		      |		Percent of CPU this job got: 77%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:40.13  |		Elapsed (wall clock) time (h:mm:ss or m:ss): 0:34.72
+	Average shared text size (kbytes): 0				Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0				Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0					Average stack size (kbytes): 0
+	Average total size (kbytes): 0					Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 71152	      |		Maximum resident set size (kbytes): 71216
+	Average resident set size (kbytes): 0				Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0				Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 8098	      |		Minor (reclaiming a frame) page faults: 8099
+	Voluntary context switches: 1					Voluntary context switches: 1
+	Involuntary context switches: 4426		      |		Involuntary context switches: 3720
+	Swaps: 0							Swaps: 0
+	File system inputs: 0						File system inputs: 0
+	File system outputs: 8						File system outputs: 8
+	Socket messages sent: 0						Socket messages sent: 0
+	Socket messages received: 0					Socket messages received: 0
+	Signals delivered: 0						Signals delivered: 0
+	Page size (bytes): 4096						Page size (bytes): 4096
+	Exit status: 0							Exit status: 0
